@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="5.0.10" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LMS.core\LMS.core.csproj" />
+    <ProjectReference Include="..\LMS.data\LMS.data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Misc.Net5.1.0">
+      <HintPath>..\..\..\_csLibs\Misc.Net5.1.0\bin\Debug\net5.0\Misc.Net5.1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="SysLib.Net5.1.0">
+      <HintPath>..\..\..\_csLibs\SysLib.Net5.1.0\bin\Debug\net5.0\SysLib.Net5.1.0.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
